@@ -45,7 +45,7 @@ header{
             letter-spacing: 3px;;
             margin-bottom:0px;
             margin-top:5px;
-            font-family: cursive;   
+               
             text-shadow: 4px 4px 4px $backgroundColor;
         }
         h2{
@@ -53,7 +53,7 @@ header{
             font-size: 30px;
             margin-top:0px;
             margin-bottom:0px;
-            font-family: cursive;
+            
             text-shadow: 4px 4px 4px $backgroundColor;
         }
     }  
@@ -106,7 +106,7 @@ main{
                 width: 250px;
                 background-color: $backgroundColor;
                 font-size: 45px;
-                font-family: cursive;
+                
                 text-align: center;
                 color:$textColor;
             }
@@ -177,7 +177,7 @@ main{
 
 .textMainColor{
     color:$textColor;
-    font-family: cursive;
+    font-family:Book Antiqua;
     
  }
 
