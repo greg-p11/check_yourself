@@ -1,0 +1,152 @@
+
+@media (max-width: 600px)
+{
+    header{    
+        .headTitle{         
+            h1{
+                font-size: 40px;
+                letter-spacing: 2px;         
+            }
+            h2{                  
+                font-size: 18px;
+            }
+        }  
+    }
+    main{          
+        .navbar{
+            .navbutton{            
+                button{
+                    height: 30px;
+                    width: 90px;
+                    font-size: 13px;        
+                }
+            } 
+            #contentType{
+                font-size: 12px;
+            }   
+        }     
+        .mainContent{
+            font-size: 40px;
+            
+            #answerHolder{          
+                #answer{               
+                    height: 45px;
+                    width: 200px;             
+                    font-size: 35px;                
+                }
+                #startTask{       
+                    height: 25px;            
+                    font-size:18px; 
+                }
+            }
+            .scoreBoard{
+                .scoreStyle{                    
+                    font-size: 15px;  
+                    margin: 0 20px 0 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px)
+{
+    header{    
+        .headTitle{         
+            h1{
+                font-size: 25px;
+                letter-spacing: 1px;         
+            }
+            h2{                  
+                font-size: 11px;
+            }
+        }  
+    }
+    main{          
+        .navbar{
+            .navbutton{            
+                button{
+                    margin:5px;
+                    height: 30px;
+                    width: 70px;
+                    font-size: 11px;        
+                }
+            } 
+            #contentType{
+                font-size: 11px;
+            }   
+        }     
+        .mainContent{
+            font-size: 25px;
+            #answerHolder{          
+                #answer{               
+                    height: 35px;
+                    width: 150px;             
+                    font-size: 27px;                
+                }
+                #startTask{       
+                    height: 20px;            
+                    font-size:15px; 
+                }
+            }
+            .scoreBoard{
+                .scoreStyle{                    
+                    font-size: 11px;  
+                    margin: 0 10px 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media  (max-height: 510px)
+{
+    header{    
+        .headTitle{         
+            h1{
+                font-size: 18px;
+                letter-spacing: 2px;         
+            }
+            h2{                  
+                font-size: 12px;
+            }
+        }  
+    }
+    main{          
+        .navbar{
+            margin-top:5px;
+            .navbutton{            
+                button{
+                    height: 25px;
+                    width: 90px;
+                    font-size: 12px;  
+                    margin-top:0px;  
+                    margin-bottom:0px;      
+                }
+            } 
+            #contentType{
+                font-size: 12px;
+            }   
+        }     
+        .mainContent{
+            font-size: 25px;
+            #answerHolder{          
+                #answer{               
+                    height: 40px;
+                    width: 200px;             
+                    font-size: 32px;                
+                }
+                #startTask{       
+                    height: 23px;            
+                    font-size:15px; 
+                    
+                }
+            }
+            .scoreBoard{
+                .scoreStyle{                    
+                    font-size: 12px;  
+                    margin: 0 20px 0 20px;
+                }
+            }
+        }
+    }
+}

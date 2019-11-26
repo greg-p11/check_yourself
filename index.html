@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Check Yourself</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"  content="Aplication to test your writing and calculation skills">
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+            </script>
+
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+
+
+    <body>      
+        <div class="container">
+
+            <header>     
+                <div class="headTitle textMainColor">
+                    <h1 >check &nbsp;Yourself</h1>
+                    <h2>in</h2>
+                </div> 
+            </header>
+
+            <main>  
+                <div class="navbar textMainColor">
+                    <div class="navbutton">
+                        <button id="btnwrite" class="textMainColor ">Writing</button>
+                        <button id="btncalc" class="textMainColor">Calculation</button>                
+                    </div>
+                    <div id="contentType"></div>   
+                </div>
+                <div class="mainContent textMainColor">
+                    <div id="question" >Be ready</div>
+                    <div id="answerHolder">        
+                        <input id="answer" type="text" value="" onfocus="this.value=''"/>                  
+                        <button id="startTask" class="textMainColor " >Start</button>  
+                    </div>
+                    <div class="scoreBoard">
+                        <div  class="scoreStyle textMainColor">
+                            <p>Score:</p>
+                            <div id="score" class="scoreText textMainColor" value="0">0</div>
+                        </div>
+                        <div  class="scoreStyle textMainColor">
+                            <p>Best&nbsp;score:</p>   
+                            <div id="bestScore" class="scoreText textMainColor" >0</div>   
+                        </div>         
+                    </div>
+                </div>   
+            </main>
+            
+            <div class="sideBarLeft">
+                    <div class="timeBar" hidden="true"></div>
+            </div>
+
+            <div class="sideBarRight" >
+                    <div class="timeBar" hidden="true"></div>
+            </div>
+            
+            <div class="bottomDiv"></div>
+            
+            <div id="loseWindow" class="textMainColor" hidden="true">
+                <div id="loseContent" >
+                    <h1 class="lostInfo">You Lose</h1>
+                    <h2 id="yourScore">You Lose</h2>
+                    <button id="playAgain" class="textMainColor lostInfo">Try Again</button>
+                </div>  
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</html>

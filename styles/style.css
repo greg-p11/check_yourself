@@ -1,0 +1,479 @@
+body {
+  background: #36343f;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 35% 35% 15%;
+      grid-template-columns: 15% 35% 35% 15%;
+  -ms-grid-rows: 15%  70%  15%;
+      grid-template-rows: 15%  70%  15%;
+      grid-template-areas: "header header header header" "sides1 main main sides2" "footer footer footer footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ca7404;
+  background-size: cover;
+  border-radius: 100px 100px 0 0;
+  margin: 5px 5px 0px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .headTitle {
+  text-align: center;
+}
+
+header .headTitle h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-family: cursive;
+  text-shadow: 4px 4px 4px #36343f;
+}
+
+header .headTitle h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: cursive;
+  text-shadow: 4px 4px 4px #36343f;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+main .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+main .navbar .navbutton {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .navbar .navbutton button {
+  margin: 20px;
+  border: none;
+  height: 40px;
+  width: 120px;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px #36343f;
+}
+
+main .navbar #contentType {
+  margin: 10px;
+  text-align: center;
+}
+
+main .mainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
+  border-radius: 150px;
+  margin: 1% 5%;
+  height: 60%;
+  font-size: 50px;
+}
+
+main .mainContent #answerHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .mainContent #answerHolder #answer {
+  border: 2px solid;
+  outline: none;
+  border-color: #ca7404;
+  border-radius: 25px 25px 0 0;
+  height: 60px;
+  width: 250px;
+  background-color: #36343f;
+  font-size: 45px;
+  font-family: cursive;
+  text-align: center;
+  color: snow;
+}
+
+main .mainContent #answerHolder #startTask {
+  border: none;
+  border-radius: 0 0 25px 25px;
+  background-color: #ca7404;
+  height: 30px;
+  outline: none;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #36343f;
+}
+
+main .mainContent #answerHolder #startTask:hover {
+  background-color: #ff9305;
+}
+
+main .mainContent .scoreBoard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .mainContent .scoreBoard .scoreStyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px 0 20px;
+}
+
+.sideBarLeft {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sides1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+}
+
+.sideBarLeft .timeBar {
+  -webkit-animation: shrink 5s ease-in-out;
+          animation: shrink 5s ease-in-out;
+  background: #ca7404;
+  background-size: cover;
+  width: 60%;
+  height: 100%;
+}
+
+.sideBarRight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: sides2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.sideBarRight .timeBar {
+  -webkit-animation: shrink 5s ease-in-out;
+          animation: shrink 5s ease-in-out;
+  background: #ca7404;
+  background-size: cover;
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+
+.bottomDiv {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+  background: #ca7404;
+  background-size: cover;
+  border-radius: 0 0 100px 100px;
+  margin: 0px 5px 5px  5px;
+}
+
+.textMainColor {
+  color: snow;
+  font-family: cursive;
+}
+
+#loseWindow {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  z-index: 100;
+}
+
+#loseWindow #loseContent {
+  height: 100%;
+  -webkit-animation: big 3s;
+          animation: big 3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #36343f;
+  background-size: cover;
+}
+
+#loseWindow #loseContent h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  -webkit-animation: small 3s ease-in-out;
+          animation: small 3s ease-in-out;
+}
+
+#loseWindow #loseContent button {
+  margin: 20px;
+  border: none;
+  height: 40px;
+  width: 120px;
+  font-size: 18px;
+  -webkit-animation: small 5s ease-in-out;
+          animation: small 5s ease-in-out;
+  background-color: #ca7404;
+  text-shadow: 2px 2px 4px #36343f;
+}
+
+#loseWindow #loseContent button:hover {
+  background-color: #ca7404;
+}
+
+#loseWindow #loseContent button:active {
+  background-color: red;
+}
+
+@-webkit-keyframes big {
+  from {
+    height: 0%;
+    opacity: 0.2;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes big {
+  from {
+    height: 0%;
+    opacity: 0.2;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes small {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes small {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shrink {
+  from {
+    height: 0%;
+    background-color: #ca7404;
+    background-size: cover;
+  }
+  to {
+    height: 100%;
+    background-color: #ca7404;
+  }
+}
+
+@keyframes shrink {
+  from {
+    height: 0%;
+    background-color: #ca7404;
+    background-size: cover;
+  }
+  to {
+    height: 100%;
+    background-color: #ca7404;
+  }
+}
+
+@media (max-width: 600px) {
+  header .headTitle h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  header .headTitle h2 {
+    font-size: 18px;
+  }
+  main .navbar .navbutton button {
+    height: 30px;
+    width: 90px;
+    font-size: 13px;
+  }
+  main .navbar #contentType {
+    font-size: 12px;
+  }
+  main .mainContent {
+    font-size: 40px;
+  }
+  main .mainContent #answerHolder #answer {
+    height: 45px;
+    width: 200px;
+    font-size: 35px;
+  }
+  main .mainContent #answerHolder #startTask {
+    height: 25px;
+    font-size: 18px;
+  }
+  main .mainContent .scoreBoard .scoreStyle {
+    font-size: 15px;
+    margin: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  header .headTitle h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  header .headTitle h2 {
+    font-size: 11px;
+  }
+  main .navbar .navbutton button {
+    margin: 5px;
+    height: 30px;
+    width: 70px;
+    font-size: 11px;
+  }
+  main .navbar #contentType {
+    font-size: 11px;
+  }
+  main .mainContent {
+    font-size: 25px;
+  }
+  main .mainContent #answerHolder #answer {
+    height: 35px;
+    width: 150px;
+    font-size: 27px;
+  }
+  main .mainContent #answerHolder #startTask {
+    height: 20px;
+    font-size: 15px;
+  }
+  main .mainContent .scoreBoard .scoreStyle {
+    font-size: 11px;
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media (max-height: 510px) {
+  header .headTitle h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  header .headTitle h2 {
+    font-size: 12px;
+  }
+  main .navbar {
+    margin-top: 5px;
+  }
+  main .navbar .navbutton button {
+    height: 25px;
+    width: 90px;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  main .navbar #contentType {
+    font-size: 12px;
+  }
+  main .mainContent {
+    font-size: 25px;
+  }
+  main .mainContent #answerHolder #answer {
+    height: 40px;
+    width: 200px;
+    font-size: 32px;
+  }
+  main .mainContent #answerHolder #startTask {
+    height: 23px;
+    font-size: 15px;
+  }
+  main .mainContent .scoreBoard .scoreStyle {
+    font-size: 12px;
+    margin: 0 20px 0 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,265 @@
+// Main colors
+$textColor: snow;
+$backgroundColor: rgb(54, 52, 63);
+$mainColor: rgb(202, 116, 4);
+
+
+//Main Structure
+body{
+    background: $backgroundColor;
+    padding: 0;
+    margin:0;
+    user-select: none;
+}
+.container{
+    
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: 15%  70%  15%;
+    grid-template-areas: 
+    "header header header header"
+    "sides1 main main sides2"
+    "footer footer footer footer"
+    ;
+}
+
+
+header{
+    
+    grid-area: header; 
+    display: flex;
+    background:$mainColor;
+    background-size: cover;
+    border-radius: 100px 100px 0 0;
+    margin: 5px 5px 0px 5px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    .headTitle{
+
+        text-align: center;    
+        
+        h1{
+            font-size: 50px;
+            letter-spacing: 3px;;
+            margin-bottom:0px;
+            margin-top:5px;
+            font-family: cursive;   
+            text-shadow: 4px 4px 4px $backgroundColor;
+        }
+        h2{
+            
+            font-size: 30px;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-family: cursive;
+            text-shadow: 4px 4px 4px $backgroundColor;
+        }
+    }  
+}
+
+main{
+    grid-area: main; 
+    .navbar{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:3%;
+        .navbutton{
+            flex-direction: row;
+        
+            button{
+                margin: 20px;
+                border: none;
+                height: 40px;
+                width: 120px;
+                font-size: 18px;  
+                text-shadow: 2px 2px 2px $backgroundColor;      
+            }
+        } 
+        #contentType{
+            margin:10px;
+            text-align: center;
+        }   
+    }
+   
+    .mainContent{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        border-radius: 150px;
+        margin:1% 5%;
+        height: 60%;
+        font-size: 50px;
+        #answerHolder{
+            display:flex;
+            flex-direction: column;
+            #answer{
+                border: 2px solid;
+                outline:none;
+                border-color: $mainColor;
+                border-radius: 25px 25px 0 0;
+                height: 60px;
+                width: 250px;
+                background-color: $backgroundColor;
+                font-size: 45px;
+                font-family: cursive;
+                text-align: center;
+                color:$textColor;
+            }
+            #startTask{
+                border:none;
+                border-radius:0 0 25px 25px;
+                background-color: $mainColor;
+                height: 30px;
+                outline:none;
+                font-size:20px;
+                text-shadow: 2px 2px 2px $backgroundColor;  
+                &:hover{
+                    background-color: rgb(255, 147, 5);
+                }
+            }
+        }
+        .scoreBoard{
+            display:flex;
+            justify-content: space-around;
+
+            .scoreStyle{
+                display:flex;
+                font-size: 25px;
+                align-items: center;
+                margin: 0 20px 0 20px;
+            }
+        }
+    }
+}
+
+.sideBarLeft{
+    grid-area: sides1; 
+    display:flex;
+    align-items: center;
+    margin-left:5px;
+    .timeBar{      
+        animation: shrink 5s ease-in-out;   
+        background:$mainColor;
+        background-size: cover;
+        width: 60%;
+        height: 100%;          
+    }
+}
+.sideBarRight{
+    grid-area: sides2; 
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right:5px;
+    .timeBar{      
+        animation: shrink 5s ease-in-out ;  
+        background:$mainColor;
+        background-size: cover;
+        float: right;
+        width: 60%;
+        height: 100%;              
+    }
+}
+
+
+.bottomDiv{
+        grid-area: footer; 
+        background:$mainColor;
+        background-size: cover;
+        border-radius: 0 0 100px 100px;
+        margin:0px 5px 5px  5px;
+}
+
+.textMainColor{
+    color:$textColor;
+    font-family: cursive;
+    
+ }
+
+
+ 
+ #loseWindow{
+    grid-column: 1/5;
+    grid-row:2/3;
+    z-index:100;
+    
+    #loseContent{
+        height: 100%;
+        animation:big 3s;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:$backgroundColor;
+        background-size: cover;
+        h1{
+            font-size: 50px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;  
+            animation:small 3s ease-in-out;
+        }
+        button{
+            margin: 20px;
+            border: none;
+            height: 40px;
+            width: 120px;
+            font-size: 18px;  
+            animation:small 5s ease-in-out;
+            background-color:$mainColor;
+            text-shadow: 2px 2px 4px $backgroundColor;  
+
+            &:hover{
+                background-color: $mainColor;
+            }
+            &:active{
+                background-color: red;
+            }
+        }
+    }
+}
+
+
+
+    @keyframes big{
+        from{
+            height:0%;
+            opacity:0.2;
+            
+        }
+        to{
+            height:100%;
+            opacity:1;
+        }
+    }
+    @keyframes small{
+        from{     
+            opacity:0;    
+        }
+        to{   
+            opacity:1;
+        }
+    }
+
+    @keyframes shrink {
+        from{
+            height:0%;
+            background-color: $mainColor;
+            background-size: cover;
+        }
+        to{
+            height:100%;
+            background-color: $mainColor;
+        }
+    }
+  
+
+
+
+    
+ //RWD 
+ @import "./rwdStyle";
