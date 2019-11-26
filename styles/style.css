@@ -10,6 +10,7 @@ body {
 
 .container {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 15% 35% 35% 15%;

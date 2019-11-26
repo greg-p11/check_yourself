@@ -13,7 +13,8 @@ body{
 }
 .container{
     
-    height: 100vh;
+     height: 100vh;
+     height: calc(var(--vh, 1vh) * 100);
     display:grid;
     grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: 15%  70%  15%;
