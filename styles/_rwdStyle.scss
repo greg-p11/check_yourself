@@ -51,6 +51,7 @@
 @media (max-width: 400px)
 {
     header{    
+        min-height: 40px; 
         .headTitle{         
             h1{
                 font-size: 25px;
@@ -61,7 +62,8 @@
             }
         }  
     }
-    main{          
+    main{         
+        min-height: 200px; 
         .navbar{
             .navbutton{            
                 button{
@@ -76,12 +78,12 @@
             }   
         }     
         .mainContent{
-            font-size: 25px;
+            font-size: 23px;
             #answerHolder{          
                 #answer{               
-                    height: 35px;
+                    height: 25px;
                     width: 150px;             
-                    font-size: 27px;                
+                    font-size: 25px;                
                 }
                 #startTask{       
                     height: 20px;            
@@ -101,6 +103,7 @@
 @media  (max-height: 510px)
 {
     header{    
+        min-height: 30px; 
         .headTitle{         
             h1{
                 font-size: 18px;
@@ -111,7 +114,8 @@
             }
         }  
     }
-    main{          
+    main{    
+        min-height: 200px;       
         .navbar{
             margin-top:5px;
             .navbutton{            
@@ -131,9 +135,9 @@
             font-size: 25px;
             #answerHolder{          
                 #answer{               
-                    height: 40px;
+                    height: 25px;
                     width: 200px;             
-                    font-size: 32px;                
+                    font-size: 25px;                
                 }
                 #startTask{       
                     height: 23px;            
