@@ -1,4 +1,5 @@
 $("body").ready(function () {
+    
     $("#btnwrite").css({ 'background-color': 'rgb(255, 147, 5)' });
     $("#btncalc").css({ 'background-color': 'rgb(202, 116, 4)' });
     $("#btnwrite").val(1);
@@ -164,10 +165,8 @@ $("#playAgain").click(function () {
 
 
 
-
-//funkcja dla rwd 
-$(function() {
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    $("html, body").css({"width":w,"height":h});
-});
+//kod dla rwd telefonów
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
