@@ -50,7 +50,6 @@ header .headTitle h1 {
   letter-spacing: 3px;
   margin-bottom: 0px;
   margin-top: 5px;
-  font-family: cursive;
   text-shadow: 4px 4px 4px #36343f;
 }
 
@@ -58,7 +57,6 @@ header .headTitle h2 {
   font-size: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: cursive;
   text-shadow: 4px 4px 4px #36343f;
 }
 
@@ -144,7 +142,6 @@ main .mainContent #answerHolder #answer {
   width: 250px;
   background-color: #36343f;
   font-size: 45px;
-  font-family: cursive;
   text-align: center;
   color: snow;
 }
@@ -243,7 +240,7 @@ main .mainContent .scoreBoard .scoreStyle {
 
 .textMainColor {
   color: snow;
-  font-family: cursive;
+  font-family: Book Antiqua;
 }
 
 #loseWindow {
